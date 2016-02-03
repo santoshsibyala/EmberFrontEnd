@@ -1,0 +1,27 @@
+<div class="row">
+<div class="col-md-6">
+<ul>
+
+        {{#each mod in model}}
+
+        <li>
+               {{#link-to 'posts.post' mod}} {{mod.title}}  {{/link-to}} by {{mod.author.fname}} {{mod.author.lname}}
+            <a href="#" {{action 'deletePost' mod}}>Delete!</a>
+
+        </li>
+
+        {{/each}}
+</ul>
+  {{outlet}}
+  </div>
+<div class="col-md-6">
+<p>Add new post</p>
+
+    <div><label> Title: </label>{{input value=model.title }}</div>
+    <div><label> author fname: </label>{{input value=fname }}</div>
+    <div><label> author lname: </label>{{input value=lname }}</div>
+	<div><label> Test Field Title: </label>{{input value=newTitle}}</div>
+    <button {{action 'addPost'}} >Add </button>
+</div>
+
+</div>
