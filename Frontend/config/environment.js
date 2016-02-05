@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'blog',
+    modulePrefix: 'ember-simple-auth-sample',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
@@ -16,12 +16,7 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    },
-    contentSecurityPolicyHeader: 'Content-Security-Policy-Report-Only',
-    contentSecurityPolicy: {
-      'connect-src': "'self' http://localhost:3000/*"
     }
-
   };
 
   if (environment === 'development') {

@@ -1,0 +1,60 @@
+{
+    "excludeFiles": ["node_modules/**", "docs/**", "keys/**", "models/**", "scripts/**"],
+    "disallowMultipleLineBreaks": true,
+    "disallowMultipleLineStrings": true,
+    "disallowNewlineBeforeBlockStatements": true,
+    "requireSpacesInsideObjectBrackets": "allButNested",
+    "disallowSpacesInsideParentheses": true,
+    "disallowTrailingWhitespace": true,
+    "disallowSpaceAfterObjectKeys": true,
+    "disallowEmptyBlocks": true,
+    "requireSpaceBeforeBlockStatements": true,
+    "requireBlocksOnNewline": true,
+    "requireParenthesesAroundIIFE": true,
+    "requireCapitalizedConstructors": true,
+    "requireCommaBeforeLineBreak": true,
+    "validateIndentation": "\t",
+    "requireCurlyBraces": [
+        "else",
+        "for",
+        "while",
+        "do",
+        "try",
+        "catch"
+    ],
+    "requireSpaceAfterBinaryOperators": [
+       "+",
+       "-",
+       "/",
+       "*",
+       "=",
+       "==",
+       "===",
+       "!=",
+       "!=="
+    ],
+    "validateQuoteMarks": {
+        "mark": "'",
+        "escape": true
+    },
+    "requireSpacesInAnonymousFunctionExpression": {
+        "beforeOpeningCurlyBrace": true
+    },
+	"disallowSpacesInAnonymousFunctionExpression": {
+        "beforeOpeningRoundBrace": true
+	},
+    "requireSpacesInFunctionDeclaration": {
+        "beforeOpeningCurlyBrace": true
+    },
+	"disallowSpacesInFunctionDeclaration": {
+        "beforeOpeningRoundBrace": true
+	},
+    "requireSpacesInNamedFunctionExpression": {
+       "beforeOpeningCurlyBrace": true
+    },
+    "disallowSpacesInNamedFunctionExpression": {
+       "beforeOpeningRoundBrace": true
+    },
+    "requireSpacesInConditionalExpression": true,
+    "validateParameterSeparator": ", "
+}

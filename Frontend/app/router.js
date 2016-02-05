@@ -6,17 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource("posts",function(){
-    this.route("post",{path:':post_id'});
-  });
-
-  this.resource("authors",function(){
-    this.route("author",{path:':author_id'});
-  });
-
-  this.resource("testposts");
-
-
+  this.route('login');
+  this.route('protected');
+  this.route('post');
 });
 
 export default Router;

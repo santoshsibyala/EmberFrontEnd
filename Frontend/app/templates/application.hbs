@@ -1,18 +1,13 @@
+<h2 id='title'>Welcome to Ember.js</h2>
 
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <ul class="nav nav-pills ">
+{{#link-to 'index'}}Home{{/link-to}}
+{{#link-to 'protected'}}View Posts{{/link-to}}
 
-                <li role="presentation" >{{#link-to 'posts'}}posts{{/link-to}}</li>
-                <li role="presentation">{{#link-to 'authors'}}Authors{{/link-to}}</li>
-                <li role="presentation">{{#link-to 'testposts'}}TestPosts{{/link-to}}</li>
-            </ul>
-        </div>
-    </div>
-</nav>
+{{#if session.isAuthenticated}}
 
+  <button {{action 'invalidateSession'}}>Logout</button>
+{{else}}
+  {{#link-to 'login'}}Login{{/link-to}}
+{{/if}}
 
 {{outlet}}
-
-
